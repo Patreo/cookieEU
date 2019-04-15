@@ -1,4 +1,4 @@
-(function($) {
+﻿(function($) {
     
     $.fn.cookieEU = function(options) {
         var defaults = {
@@ -102,7 +102,7 @@
             });
 
             if (readCookie('cookieEU') == null || readCookie('cookieEU') != 'accepted') {
-                $this.prepend($element);
+                $this.append($element);
 
                 if ($element.is(':visible')) {
                     $this.css('paddingTop', $element.height());
